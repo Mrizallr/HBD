@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Happy Birthday Sayang💝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="LOGO" href="/img/heart.png">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="netflix-bg min-h-screen">
+    <!-- Music -->
+    <audio id="background-music" autoplay loop>
+        <source src="/img/Musik.mp3" type="audio/mpeg">
+    </audio>
+    
+    <nav class="fixed w-full z-50 bg-gradient-to-b from-black/80 to-transparent px-12 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-12">
+                <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow.png" 
+                     alt="Netflix" 
+                     class="w-24">
+                <div class="flex gap-6 text-gray-300">
+                    <a href="#" class="hover:text-white">Home</a>
+                    <a href="#" class="hover:text-white">Series</a>
+                    <a href="#" class="hover:text-white">Movies</a>
+                    <a href="#" class="hover:text-white">New and Popular</a>
+                    <a href="#" class="hover:text-white">My List</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0 bg-cover bg-center" 
+             style="background-image: url('/img/ayang1.jpeg');">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 pt-[30vh] px-12 max-w-3xl">
+            <h1 class="text-6xl font-bold text-white mb-6 fade-in">
+                Happy Birthday Sayangg💝
+            </h1>
+            
+            <p class="text-white text-xl mb-8 slide-up" style="text-align: justify ;animation-delay: 0.5s">
+                My girlfriend is truly special to me; I can't even begin to explain how lucky I feel to have her in my life. She is so perfect in every little way—her smile, her laughter, her eyes—they all make me fall in love with her over and over again. 
+                There’s a warmth in her presence that brings me comfort and happiness. She’s my everything, and I cherish every moment by her side.
+                
+            </p>
+
+            <div class="hidden-buttons flex gap-4" id="action-buttons">
+                <button onclick="openModal()" class="px-8 py-3 bg-white text-black font-bold rounded hover:bg-white/90">
+                    Play
+                </button>
+                <button class="px-8 py-3 bg-gray-500/50 text-white font-bold rounded hover:bg-gray-500/40">
+                    More Info
+                </button>
+                <div class="relative">
+                    <button onclick="triggerConfetti()" class="px-8 py-3 bg-pink-500 text-white font-bold rounded hover:bg-pink-400">
+                        Klik Duluu!!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="birthdayModal">
+        <div class="modal-content text-white flex flex-col  overflow-y-auto max-h-[90vh]">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+            <h2 class="text-3xl font-bold mb-6">Happy Birthday, Ayangg Mbill</h2>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" onclick="openImageModal('/img/Ayang1.jpeg')">
+                <img src="/img/IMG10.jpeg" alt="Gallery 1" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <p class="mb-4 mt-4">Hi Babeee.</p>
+            <p class="mb-4">Hai my precious girlfriend, happy birthday sayang!! 🎉💖
+                Every day is your day, but today is more special. 🌹
+                Di hari yang spesial ini, Izal cuma ingin bilang terima kasih karena kamu telah menjadi wanita terbaik untuk Izal, dan sudah mencintaiku dengan tulus. 💕
+                Do you know? You’re the most favorite woman after my mom, you’re special, and Izal is truly happy to have a girlfriend as perfect as you. 💫
+                Izal selalu ingin mengucapkan terima kasih karena kamu sudah menjadi rumah bagi Izal, rumah ternyaman untuk Izal pulang dan bercerita. 🏡💖 Kamu membuat Izal merasa sempurna dan dicintai, karena kamu memperlakukan Izal layaknya raja. 👑 Semakin lama Izal bersama kamu, semakin tahu juga bagaimana sifat dan tutur kata kamu.
+                Sesempurna itu kamu di mata Izal, dan sesempurna ini Izal dicintai. ❤️
+                Happy birthday sayang, wish you all the best. I love you so much, and stay with me, okay? 😘💝</p>
+            <div class=" text-center">
+                <p class="text-xl font-semibold">Happy Birthday! 🎂</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Grid Section -->
+    <div class="px-12 py-8">
+        <h2 class="text-white text-2xl font-bold mb-6">More to Explore: Nabila Putri Ramdhania Arysad</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
+            <!-- Original Images -->
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700">
+                <img src="/img/Ayang1.jpeg" alt="Gallery 1" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 100ms">
+                <img src="/img/Ayang2.jpeg" alt="Gallery 2" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 200ms">
+                <img src="/img/Ayang3.jpeg" alt="Gallery 3" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 300ms">
+                <img src="/img/ayang4.jpeg" alt="Gallery 4" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <!-- Additional Images to Extend the Grid -->
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 400ms">
+                <img src="/img/ayang5.jpeg" alt="Gallery 9" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 500ms">
+                <img src="/img/ayang6.jpeg" alt="Gallery 10" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 600ms">
+                <img src="/img/ayang7.jpeg" alt="Gallery 11" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="gallery-item opacity-0 transform translate-y-4 transition-all duration-700" style="transition-delay: 700ms">
+                <img src="/img/ayang8.jpeg" alt="Gallery 12" class="w-full h-[300px] object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
